@@ -32,7 +32,7 @@ function App() {
       <DayOptions
         id="limburg"
         heading="Flanders: day options"
-        subtitle="5 days at the house. Pick and choose — leave room for pool mornings and unscheduled afternoons."
+        subtitle="Pick ~4, decide game-time based on vibes / weather"
         options={limburgOptions}
         accentColor="limburg"
         tintColor="limburg-tint"
