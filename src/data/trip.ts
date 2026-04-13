@@ -133,7 +133,7 @@ export const amsterdamRentals: Rental[] = [
 ];
 
 export const nextSteps: NextStep[] = [
-  { number: 1, title: "Lock the dates", desc: "" },
+  { number: 1, title: "Book airfare", desc: "" },
   { number: 2, title: "Book the Flanders house", desc: "" },
   { number: 3, title: "Book Amsterdam apartment", desc: "" },
   { number: 4, title: "Reserve the rental car", desc: "" },
