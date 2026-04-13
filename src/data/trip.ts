@@ -114,7 +114,7 @@ export const amsterdamOptions: ActivityOption[] = [
     body: "Dinner-plate-sized Dutch pancakes, sweet or savory toppings. The Pancake Bakery (Prinsengracht) or Pancakes Amsterdam (multiple locations)." },
   { title: "Anne Frank House",     tag: "2 hours",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
-    body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Heavy subject matter; adults-only option while other parent takes kids elsewhere." },
+    body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere." },
 ];
 
 export const limburgRentals: Rental[] = [
