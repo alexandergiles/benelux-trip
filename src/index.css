@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-terracotta: #B85042;
+  --color-sand: #E7E8D1;
+  --color-sage: #A7BEAE;
+  --color-ink: #2C2A28;
+  --color-muted: #6B5E57;
+  --color-limburg: #0F6E56;
+  --color-coral: #B85042;
+  --color-limburg-tint: #E1F5EE;
+  --color-coral-tint: #FBE8E3;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: #faf9f6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.leaflet-tooltip {
+  background: white;
+  border: 1px solid var(--color-sand);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-ink);
+  box-shadow: none;
+}
+
+.leaflet-tooltip-left::before {
+  border-left-color: var(--color-sand);
+}
+
+.leaflet-tooltip-right::before {
+  border-right-color: var(--color-sand);
+}
+
+.section-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}
