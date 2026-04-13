@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 min-h-[380px]">
         {/* Left */}
         <div className="bg-terracotta text-white flex flex-col justify-center px-8 sm:px-12 py-12 md:py-16">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Family vaca 2026: The Low Countries</h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Family Vaca 2026</h1>
           <ul className="space-y-2 text-white/85 text-base sm:text-lg">
             <li>Jun 21 — Fly from Washington, DC to Amsterdam, Netherlands</li>
             <li>Jun 21–26 — Countryside house near Borgloon, Belgium</li>
