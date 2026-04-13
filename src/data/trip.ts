@@ -91,30 +91,30 @@ export const limburgOptions: ActivityOption[] = [
 ];
 
 export const amsterdamOptions: ActivityOption[] = [
-  { title: "Canal boat ride",      tag: "1 hour \u00b7 everyone happy",
+  { title: "Canal boat ride",      tag: "1 hour",
     photo: "photos/canal-boat.jpg", photoAlt: "Amsterdam canal with boats and historic houses",
-    body: "The single highest fun-per-effort activity in the city. Book a small open-boat tour (Those Dam Boat Guys or Flagship Amsterdam) rather than the big glass-top cruisers \u2014 kids can trail their hands in the water and you get better photos. One hour is the sweet spot. Late afternoon light is magic on the canals." },
-  { title: "Rijksmuseum",          tag: "Half day \u00b7 art w/ kids",
+    body: "Small open-boat tours (Those Dam Boat Guys, Flagship Amsterdam) vs. big glass-top cruisers. One hour. Late afternoon light on the canals." },
+  { title: "Rijksmuseum",          tag: "Half day",
     photo: "photos/rijksmuseum.jpg", photoAlt: "The Rijksmuseum facade with its reflecting pool",
-    body: "Surprisingly workable with kids. Grab the free family treasure-hunt booklet at the desk \u2014 it turns the visit into a scavenger hunt through the galleries. Hit the Vermeers and the Night Watch, then let the 7-year-old lead. The garden and reflecting pool out front are good decompression. Plan 2\u20132.5 hours max and duck out before anyone melts down." },
-  { title: "NEMO Science Museum",  tag: "Half day \u00b7 pure kid",
+    body: "Free family treasure-hunt booklet at the desk. Vermeers, Night Watch. Garden and reflecting pool out front. 2\u20132.5 hours." },
+  { title: "NEMO Science Museum",  tag: "Half day",
     photo: "photos/nemo.jpg", photoAlt: "NEMO Science Museum green copper building on Amsterdam waterfront",
-    body: "A giant green ship-shaped building filled with hands-on experiments, water play, chain-reaction machines, and a rooftop splash pad with city views. The 3-year-old can do more here than you\u2019d expect. The 7-year-old won\u2019t want to leave. Skip the art museums entirely and come here instead if that\u2019s your family\u2019s speed. Caf\u00e9 on the top floor." },
-  { title: "Vondelpark",           tag: "Flexible \u00b7 free",
+    body: "Ship-shaped building. Hands-on experiments, water play, chain-reaction machines, rooftop splash pad with city views. Caf\u00e9 on the top floor." },
+  { title: "Vondelpark",           tag: "Flexible",
     photo: "photos/vondelpark.jpg", photoAlt: "Leafy green paths and ponds in Vondelpark",
-    body: "Amsterdam\u2019s big backyard. Rent bikes near the entrance or just stroller-walk the paths. There are six playgrounds scattered through the park, open-air caf\u00e9s (Groot Melkhuis is the family-friendly one), duck ponds, and a shallow wading pool in summer. Great as a morning warm-up or golden-hour wind-down. Free, no tickets, no lines." },
-  { title: "Artis Zoo",            tag: "Half-to-full day",
+    body: "Bike rentals near the entrance. Six playgrounds, open-air caf\u00e9s (Groot Melkhuis), duck ponds, shallow wading pool in summer. Free, no tickets." },
+  { title: "Artis Zoo",            tag: "Half day",
     photo: "photos/artis.jpg", photoAlt: "Zoo animals in a lush green historic setting",
-    body: "Europe\u2019s oldest zoo, right in the city center. Beautiful old-growth trees, a proper aquarium, a planetarium, and a microbe museum (Micropia) next door. The grounds themselves feel like a botanical garden. Works well paired with a walk through the leafy Plantage neighborhood afterward \u2014 caf\u00e9s on Plantage Middenlaan. Budget a full morning or afternoon." },
-  { title: "Zaanse Schans",        tag: "Half day \u00b7 out of town",
+    body: "Europe\u2019s oldest zoo, city center. Aquarium, planetarium, Micropia (microbe museum) next door. Plantage neighborhood caf\u00e9s nearby." },
+  { title: "Zaanse Schans",        tag: "Half day",
     photo: "photos/zaanse-schans.jpg", photoAlt: "Dutch windmills along a river under dramatic skies",
-    body: "20 minutes by train from Amsterdam Centraal, then a short walk to a postcard-perfect village of working windmills, clog-makers, and cheese farms. Go inside a windmill to see the gears turning. The 7-year-old will want clogs; the 3-year-old will want to feed the ducks. Free to walk around; small fees for individual windmill interiors. Arrive early to beat day-trippers." },
-  { title: "Pannenkoeken dinner",  tag: "Evening \u00b7 ritual",
+    body: "20 min train from Centraal. Working windmills (go inside to see gears), clog-makers, cheese farms. Free to walk around; small fees for windmill interiors." },
+  { title: "Pannenkoeken dinner",  tag: "Evening",
     photo: "photos/pancakes.jpg", photoAlt: "Golden Dutch pancake with toppings on a cast-iron pan",
-    body: "Dutch pancakes are dinner-plate-sized, thinner than American, thicker than cr\u00eapes, and come loaded with sweet or savory toppings. The Pancake Bakery (Prinsengracht) is the classic tourist pick; Pancakes Amsterdam (multiple locations) is more modern. Either way, kids get to pick wild combinations and everyone leaves happy. Make it the first-night ritual." },
-  { title: "Anne Frank House",     tag: "2 hours \u00b7 adults only",
+    body: "Dinner-plate-sized Dutch pancakes, sweet or savory toppings. The Pancake Bakery (Prinsengracht) or Pancakes Amsterdam (multiple locations)." },
+  { title: "Anne Frank House",     tag: "2 hours",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
-    body: "Tickets release online exactly 6 weeks before the visit date \u2014 set a calendar reminder and book the moment they drop, they sell out within hours. The museum is deeply moving but not appropriate for the 3-year-old and heavy for the 7-year-old. Best as a one-parent-at-a-time visit while the other takes the kids to Vondelpark or NEMO. Allow about 1.5\u20132 hours." },
+    body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Heavy subject matter; adults-only option while other parent takes kids elsewhere." },
 ];
 
 export const limburgRentals: Rental[] = [
@@ -126,11 +126,10 @@ export const limburgRentals: Rental[] = [
 ];
 
 export const amsterdamRentals: Rental[] = [
-  { name: "Oud-Zuid / Museumkwartier", url: "https://www.airbnb.com/s/Oud-Zuid--Amsterdam--Netherlands/homes", desc: "Walk to Vondelpark, Rijksmuseum, Van Gogh. Top pick." },
-  { name: "Jordaan",                   url: "https://www.airbnb.com/s/Jordaan--Amsterdam--Netherlands/homes",  desc: "Canals, caf\u00e9s, charm. Pricier; apartments smaller." },
-  { name: "De Pijp",                   url: "https://www.airbnb.com/s/De-Pijp--Amsterdam--Netherlands/homes",  desc: "Albert Cuyp market, Sarphatipark. Hip but livable." },
-  { name: "Oost (Plantage/Artis)",     url: "https://www.airbnb.com/s/Oost--Amsterdam--Netherlands/homes",     desc: "Next to the zoo, leafy, great value." },
-  { name: "Vrbo: Amsterdam",           url: "https://www.vrbo.com/vacation-rentals/europe/netherlands/amsterdam", desc: "Entire apartments, filter 2BR+ for families." },
+  { name: "Keizersgracht Canal House",  url: "https://www.airbnb.com/rooms/1627581356585486526?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P35Sl9asqWK7X1FF&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "100m\u00b2 canal house on Keizersgracht. 3BR, design bathrooms w/ tub + rain shower. Five floors, spiral staircase, canal views from every bedroom." },
+  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
+  { name: "Design House Center",        url: "https://www.airbnb.com/rooms/1658882576998670361?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3o4X1_ya__iGq-8&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "150m\u00b2 over 4 floors. 3BR with king beds, 3 bathrooms (one with tub + double shower). A/C in top bedrooms. Private entrance, fully equipped kitchen." },
+  { name: "Oud-Zuid Family Home",        url: "https://www.airbnb.com/rooms/36483173?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3DwCOAbjYyc1nth&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Near Amsterdam Zuid station + tram stop. Roof terrace (all-day sun), two balconies. Close to Vondelpark and museums." },
 ];
 
 export const nextSteps: NextStep[] = [
