@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import type { ActivityOption } from '../data/trip'
+import { base } from '../data/base'
 
 interface Props {
   option: ActivityOption
@@ -30,7 +31,7 @@ export default function OptionCard({ option, accentColor, tintColor }: Props) {
     <div className={`${bgStyles[tintColor]} border-l-4 ${borderStyles[accentColor]} rounded-lg overflow-hidden`}>
       {option.photo && (
         <img
-          src={option.photo}
+          src={base + option.photo}
           alt={option.photoAlt || option.title}
           className="w-full h-44 object-cover"
           style={option.photoPosition ? { objectPosition: option.photoPosition } : undefined}

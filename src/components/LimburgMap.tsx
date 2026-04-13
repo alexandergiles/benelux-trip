@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 import { dayTrips } from '../data/trip'
+import { base } from '../data/base'
 
 const houseBase = { name: "House base", lat: 50.800, lng: 5.346 };
 
@@ -13,16 +14,16 @@ interface TripMeta {
 }
 
 const tripMeta: Record<string, TripMeta> = {
-  "Maastricht":           { dist: "30 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "/photos/maastricht.jpg" },
-  "Valkenburg":           { dist: "35 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "/photos/valkenburg.jpg" },
-  "Drielandenpunt":       { dist: "45 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "/photos/drielandenpunt.jpg" },
-  "Aachen (Germany)":     { dist: "50 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "/photos/aachen.jpg" },
-  "Li\u00e8ge (Belgium)": { dist: "40 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "/photos/maastricht.jpg" },
-  "Han-sur-Lesse":        { dist: "1h 15m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "/photos/han-sur-lesse.jpg" },
-  "Bokrijk (Belgium)":    { dist: "25 min",  direction: "top",    offset: [0, -22],  permanent: true,  photo: "/photos/bokrijk.jpg" },
-  "Antwerp (Belgium)":    { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "/photos/antwerp.jpg" },
-  "Brussels (Belgium)":   { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "/photos/brussels.jpg" },
-  "Cologne (Germany)":    { dist: "1h 40m",  direction: "right",  offset: [22, 0],   permanent: true,  photo: "/photos/cologne.jpg" },
+  "Maastricht":           { dist: "30 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/maastricht.jpg" },
+  "Valkenburg":           { dist: "35 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/valkenburg.jpg" },
+  "Drielandenpunt":       { dist: "45 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/drielandenpunt.jpg" },
+  "Aachen (Germany)":     { dist: "50 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/aachen.jpg" },
+  "Li\u00e8ge (Belgium)": { dist: "40 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/maastricht.jpg" },
+  "Han-sur-Lesse":        { dist: "1h 15m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/han-sur-lesse.jpg" },
+  "Bokrijk (Belgium)":    { dist: "25 min",  direction: "top",    offset: [0, -22],  permanent: true,  photo: "photos/bokrijk.jpg" },
+  "Antwerp (Belgium)":    { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/antwerp.jpg" },
+  "Brussels (Belgium)":   { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/brussels.jpg" },
+  "Cologne (Germany)":    { dist: "1h 40m",  direction: "right",  offset: [22, 0],   permanent: true,  photo: "photos/cologne.jpg" },
 };
 
 function createPhotoIcon(photo: string) {
@@ -35,7 +36,7 @@ function createPhotoIcon(photo: string) {
       width:${size}px;height:${size}px;border-radius:50%;
       border:3px solid white;
       box-shadow:0 1px 4px rgba(0,0,0,0.25);
-      background:url('${photo}') center/cover no-repeat;
+      background:url('${base}${photo}') center/cover no-repeat;
     "></div>`,
   })
 }

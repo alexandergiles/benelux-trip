@@ -1,4 +1,5 @@
 import { useFadeIn } from './useFadeIn'
+import { base } from '../data/base'
 
 export default function Hero() {
   const ref = useFadeIn()
@@ -20,7 +21,7 @@ export default function Hero() {
         {/* Right — hero image */}
         <div className="relative overflow-hidden min-h-[280px]">
           <img
-            src="/photos/hero.jpg"
+            src={base + "photos/hero.jpg"}
             alt="The Giles family European vacation"
             className="absolute inset-0 w-full h-full object-cover"
           />

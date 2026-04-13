@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import type { Rental } from '../data/trip'
 import { useFadeIn } from './useFadeIn'
+import { base } from '../data/base'
 
 interface Props {
   limburg: Rental[]
@@ -40,14 +41,14 @@ export default function Rentals({ limburg, amsterdam }: Props) {
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-limburg-tint rounded-lg overflow-hidden border border-sand">
-          <img src="/photos/rental-borgloon.jpg" alt="Borgloon rental house" className="w-full h-48 object-cover" loading="lazy" />
+          <img src={base + "photos/rental-borgloon.jpg"} alt="Borgloon rental house" className="w-full h-48 object-cover" loading="lazy" />
           <div className="p-6">
             <h3 className="font-heading text-xl text-limburg mb-4">Borgloon house</h3>
             <RentalList rentals={limburg} />
           </div>
         </div>
         <div className="bg-coral-tint rounded-lg overflow-hidden border border-sand">
-          <img src="/photos/rental-amsterdam.jpg" alt="Amsterdam apartment" className="w-full h-48 object-cover" loading="lazy" />
+          <img src={base + "photos/rental-amsterdam.jpg"} alt="Amsterdam apartment" className="w-full h-48 object-cover" loading="lazy" />
           <div className="p-6">
             <h3 className="font-heading text-xl text-coral mb-4">Amsterdam apartment</h3>
             <RentalList rentals={amsterdam} />
