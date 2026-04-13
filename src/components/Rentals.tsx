@@ -4,8 +4,14 @@ import { useFadeIn } from './useFadeIn'
 import { base } from '../data/base'
 
 interface Props {
-  limburg: Rental[]
-  amsterdam: Rental[]
+  id?: string
+  heading: string
+  rentals: Rental[]
+  photo: string
+  photoAlt: string
+  tint: 'limburg-tint' | 'coral-tint'
+  accent: 'limburg' | 'coral'
+  label: string
 }
 
 function RentalList({ rentals }: { rentals: Rental[] }) {
@@ -31,28 +37,28 @@ function RentalList({ rentals }: { rentals: Rental[] }) {
   )
 }
 
-export default function Rentals({ limburg, amsterdam }: Props) {
+const tintStyles: Record<string, string> = {
+  'limburg-tint': 'bg-limburg-tint',
+  'coral-tint': 'bg-coral-tint',
+}
+
+const accentStyles: Record<string, string> = {
+  limburg: 'text-limburg',
+  coral: 'text-coral',
+}
+
+export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, accent, label }: Props) {
   const ref = useFadeIn()
 
   return (
-    <section id="rentals" ref={ref} className="section-fade max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <h2 className="font-heading text-3xl text-ink mb-1">Rental starting points</h2>
-      <p className="text-muted mb-8">Search links to get you going — not final picks.</p>
+    <section id={id} ref={ref} className="section-fade max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <h2 className="font-heading text-3xl text-ink mb-8">{heading}</h2>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="bg-limburg-tint rounded-lg overflow-hidden border border-sand">
-          <img src={base + "photos/rental-borgloon.jpg"} alt="Borgloon rental house" className="w-full h-48 object-cover" loading="lazy" />
-          <div className="p-6">
-            <h3 className="font-heading text-xl text-limburg mb-4">Borgloon house</h3>
-            <RentalList rentals={limburg} />
-          </div>
-        </div>
-        <div className="bg-coral-tint rounded-lg overflow-hidden border border-sand">
-          <img src={base + "photos/rental-amsterdam.jpg"} alt="Amsterdam apartment" className="w-full h-48 object-cover" loading="lazy" />
-          <div className="p-6">
-            <h3 className="font-heading text-xl text-coral mb-4">Amsterdam apartment</h3>
-            <RentalList rentals={amsterdam} />
-          </div>
+      <div className={`${tintStyles[tint]} rounded-lg overflow-hidden border border-sand max-w-2xl`}>
+        <img src={base + photo} alt={photoAlt} className="w-full h-48 object-cover" loading="lazy" />
+        <div className="p-6">
+          <h3 className={`font-heading text-xl ${accentStyles[accent]} mb-4`}>{label}</h3>
+          <RentalList rentals={rentals} />
         </div>
       </div>
     </section>

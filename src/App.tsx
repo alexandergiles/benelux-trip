@@ -19,10 +19,19 @@ function App() {
       <Nav />
       <Hero />
       <RouteMap />
-      <Rentals limburg={limburgRentals} amsterdam={amsterdamRentals} />
+      <Rentals
+        id="rentals-flanders"
+        heading="Flanders: June 22–26"
+        rentals={limburgRentals}
+        photo="photos/rental-borgloon.jpg"
+        photoAlt="Flanders rental house"
+        tint="limburg-tint"
+        accent="limburg"
+        label="House options"
+      />
       <DayOptions
         id="limburg"
-        heading="Borgloon: day options"
+        heading="Flanders: day options"
         subtitle="5 days at the house. Pick and choose — leave room for pool mornings and unscheduled afternoons."
         options={limburgOptions}
         accentColor="limburg"
@@ -32,6 +41,16 @@ function App() {
       >
         <LimburgMap />
       </DayOptions>
+      <Rentals
+        id="rentals-amsterdam"
+        heading="Amsterdam: June 26–28"
+        rentals={amsterdamRentals}
+        photo="photos/rental-amsterdam.jpg"
+        photoAlt="Amsterdam apartment"
+        tint="coral-tint"
+        accent="coral"
+        label="Apartment options"
+      />
       <DayOptions
         id="amsterdam"
         heading="Amsterdam: day options"
