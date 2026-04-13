@@ -130,7 +130,7 @@ export default function LimburgMap() {
         className="w-full rounded-lg overflow-hidden border border-sand"
         style={{ height: 'clamp(420px, 50vw, 540px)' }}
       />
-      <p className="text-xs text-muted mt-2 italic">Drive times are approximate, from the Borgloon area. Hover over markers for details.</p>
+      <p className="text-xs text-muted mt-2 italic">Drive times approximate. Hover markers for details.</p>
     </div>
   )
 }

@@ -37,7 +37,7 @@ function App() {
         accentColor="limburg"
         tintColor="limburg-tint"
         columns={3}
-        footer="Plus pool/garden days at the house — build in at least two with a 3-year-old."
+        footer="Plus pool / garden days from the house"
       >
         <LimburgMap />
       </DayOptions>
