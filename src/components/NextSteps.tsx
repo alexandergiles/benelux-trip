@@ -15,14 +15,11 @@ export default function NextSteps({ steps }: Props) {
 
         <div className="space-y-4">
           {steps.map((s) => (
-            <div key={s.number} className="bg-white rounded-lg border border-sand p-6 flex items-start gap-5">
+            <div key={s.number} className="bg-white rounded-lg border border-sand p-6 flex items-center gap-5">
               <span className="font-heading text-4xl text-terracotta leading-none select-none">
                 {s.number}
               </span>
-              <div>
-                <h3 className="font-heading text-lg text-ink mb-1">{s.title}</h3>
-                <p className="text-sm text-muted">{s.desc}</p>
-              </div>
+              <h3 className="font-heading text-lg text-ink">{s.title}</h3>
             </div>
           ))}
         </div>

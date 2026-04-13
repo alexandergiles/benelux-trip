@@ -133,8 +133,8 @@ export const amsterdamRentals: Rental[] = [
 ];
 
 export const nextSteps: NextStep[] = [
-  { number: 1, title: "Lock the dates", desc: "Confirm Sun Jun 21 arrival, Mon Jun 29 departure. Book flights \u2014 prices climb after March for late June." },
-  { number: 2, title: "Book the Flanders house", desc: "Good properties book out fast. Target 6+ sleepers, pool or large garden, in the Borgloon area." },
-  { number: 3, title: "Book Amsterdam apartment", desc: "3 nights in Oud-Zuid or Oost. Prioritize elevator (strollers + Dutch stairs = no)." },
-  { number: 4, title: "Reserve the rental car", desc: "Schiphol pickup Jun 21. Automatic transmission costs more in EU." },
+  { number: 1, title: "Lock the dates", desc: "" },
+  { number: 2, title: "Book the Flanders house", desc: "" },
+  { number: 3, title: "Book Amsterdam apartment", desc: "" },
+  { number: 4, title: "Reserve the rental car", desc: "" },
 ];
