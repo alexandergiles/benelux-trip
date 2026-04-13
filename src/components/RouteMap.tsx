@@ -73,6 +73,19 @@ export default function RouteMap() {
       { color: '#B85042', weight: 2, dashArray: '8 6', opacity: 0.7 }
     ).addTo(map)
 
+    // Car icon on the drive route between bases
+    const midLat = (bases[0].lat + bases[1].lat) / 2
+    const midLng = (bases[0].lng + bases[1].lng) / 2
+    L.marker([midLat, midLng], {
+      icon: L.divIcon({
+        className: '',
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+        html: '<div style="font-size:20px;opacity:0.6;line-height:1">🚗</div>',
+      }),
+      interactive: false,
+    }).addTo(map)
+
     // Flight path into AMS — starts well beyond left map edge to cross full width
     const ams = bases.find((b) => b.name === 'Amsterdam')!
     const mapBounds = map.getBounds()
@@ -111,33 +124,11 @@ export default function RouteMap() {
 
   return (
     <section id="route" ref={sectionRef} className="section-fade max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <h2 className="font-heading text-3xl text-ink mb-2">The route</h2>
-      <p className="text-muted mb-6">Two bases, three countries, one rental car.</p>
-
       <div
         ref={mapRef}
         className="w-full rounded-lg overflow-hidden border border-sand"
         style={{ height: 'clamp(400px, 50vw, 500px)' }}
       />
-
-      {/* Legend */}
-      <div className="flex flex-wrap items-center gap-6 mt-4 text-sm text-muted">
-        <span className="flex items-center gap-2">
-          <span className="inline-block w-3 h-3 rounded-full bg-limburg border-2 border-white shadow-sm" />
-          House base
-        </span>
-        <span className="flex items-center gap-2">
-          <span className="inline-block w-3 h-3 rounded-full bg-terracotta border-2 border-white shadow-sm" />
-          City finish
-        </span>
-        <span className="flex items-center gap-2">
-          <span className="inline-block w-3 h-3 rounded-full bg-muted border-2 border-white shadow-sm" />
-          Day trip
-        </span>
-      </div>
-      <p className="text-sm text-muted mt-2 italic">
-        ~2.5 hr drive between bases. Day trips reach 3 countries in under an hour.
-      </p>
     </section>
   )
 }
