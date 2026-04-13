@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <nav className="no-print sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-sand">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
-        <span className="font-heading text-lg text-terracotta font-bold tracking-tight">NL 2026</span>
+        <span className="font-heading text-lg text-terracotta font-bold tracking-tight">Summer 2026</span>
 
         {/* Desktop links */}
         <div className="hidden md:flex gap-6">
