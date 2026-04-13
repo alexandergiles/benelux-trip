@@ -118,14 +118,11 @@ export const amsterdamOptions: ActivityOption[] = [
 ];
 
 export const limburgRentals: Rental[] = [
-  { name: "Casa-Liesy",                 url: "https://www.airbnb.com/s/Valkenburg--Netherlands/homes?query=Casa-Liesy", desc: "Standalone house, pool + jacuzzi + sauna. Closest to the Pessac brief." },
-  { name: "Hellebeuk Domain (Klimmen)", url: "https://www.airbnb.com/s/Klimmen--Netherlands/homes?query=Hellebeuk",     desc: "Two linked bungalows, 3BR each, shared pool + tennis." },
-  { name: "Halte St. Gerlach",          url: "https://www.airbnb.com/s/Houthem--Netherlands/homes?query=Halte%20St.%20Gerlach", desc: "Converted 1903 train station, 4.66\u2605 (64 reviews). Near vineyards." },
-  { name: "Hoeve de Bies",              url: "https://www.airbnb.com/s/Valkenburg--Netherlands/homes?query=Hoeve%20de%20Bies", desc: "Renovated farmhouse w/ jacuzzi, 10 min to Valkenburg." },
-  { name: "Vrbo: Maastricht houses",    url: "https://www.vrbo.com/vacation-rentals/europe/netherlands/maastricht",     desc: "Broad search: filter by pool, 3+ BR, 4.5\u2605+ reviews." },
-  { name: "Listing 1",                  url: "https://www.airbnb.com/rooms/1455384250449715788", desc: "Airbnb listing \u2014 details TBD." },
-  { name: "Listing 2",                  url: "https://www.airbnb.com/rooms/1281740265852992133", desc: "Airbnb listing \u2014 details TBD." },
-  { name: "Listing 3",                  url: "https://www.airbnb.com/rooms/42125862",            desc: "Airbnb listing \u2014 details TBD." },
+  { name: "Borgloon Castle",            url: "https://www.airbnb.com/rooms/1281740265852992133", desc: "Airbnb listing \u2014 details TBD." },
+  { name: "Halte St. Gerlach",          url: "https://www.airbnb.co.in/rooms/32008268?source_impression_id=p3_1776086322_P3rm_a0ivOGpYn09", desc: "Converted 1903 train station, 4.66\u2605 (64 reviews). Near vineyards." },
+  { name: "Oerthe Valley",              url: "https://www.vrbo.com/1678257ha?chkin=2026-06-21&chkout=2026-06-26&d1=2026-06-21&d2=2026-06-26&startDate=2026-06-21&endDate=2026-06-26&x_pwa=1&rfrr=HSR&pwa_ts=1776090464806&referrerUrl=aHR0cHM6Ly93d3cudnJiby5jb20vSG90ZWwtU2VhcmNo&useRewards=false&adults=4&children=1_17%2C1_17&regionId=6052089&destination=Limburg+Province%2C+Flemish+Region%2C+Belgium&destType=BOUNDING_BOX&latLong=50.973896%2C5.341968&bedroom_count_gt=3&property_reviews_group=loved_by_guests&searchId=234e4a51-2758-480a-b9f3-e6bf32224f11&sort=RECOMMENDED&top_dp=238&top_cur=USD&userIntent=&selectedRoomType=27197664&selectedRatePlan=000129d56e5abe2e449f8f888aaa4946fe65&expediaPropertyId=27197664", desc: "Vrbo listing \u2014 details TBD." },
+  { name: "Schinnen House",             url: "https://www.airbnb.com/rooms/1455384250449715788", desc: "Airbnb listing \u2014 details TBD." },
+  { name: "Burdinne Refuge",            url: "https://www.airbnb.com/rooms/42125862",            desc: "Airbnb listing \u2014 details TBD." },
 ];
 
 export const amsterdamRentals: Rental[] = [

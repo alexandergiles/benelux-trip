@@ -19,6 +19,7 @@ function App() {
       <Nav />
       <Hero />
       <RouteMap />
+      <Rentals limburg={limburgRentals} amsterdam={amsterdamRentals} />
       <DayOptions
         id="limburg"
         heading="Borgloon: day options"
@@ -41,7 +42,6 @@ function App() {
         columns={4}
         footer="Neighborhoods to wander: Jordaan (canals + cafés), De Pijp (Albert Cuyp market), Oost (leafy, local)."
       />
-      <Rentals limburg={limburgRentals} amsterdam={amsterdamRentals} />
       <NextSteps steps={nextSteps} />
     </div>
   )
