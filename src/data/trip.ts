@@ -118,11 +118,11 @@ export const amsterdamOptions: ActivityOption[] = [
 ];
 
 export const limburgRentals: Rental[] = [
-  { name: "Borgloon Castle",            url: "https://www.airbnb.com/rooms/1281740265852992133", desc: "Airbnb listing \u2014 details TBD." },
+  { name: "Borgloon Castle",            url: "https://www.airbnb.com/rooms/1281740265852992133", desc: "Castle apartment in Gors Opleeuw. Shared heated pool, orangery. Rolling Haspengouw landscape, adjacent to Mombeek nature reserve." },
   { name: "Halte St. Gerlach",          url: "https://www.airbnb.co.in/rooms/32008268?source_impression_id=p3_1776086322_P3rm_a0ivOGpYn09", desc: "Converted 1903 train station, 4.66\u2605 (64 reviews). Near vineyards." },
-  { name: "Oerthe Valley",              url: "https://www.vrbo.com/1678257ha?chkin=2026-06-21&chkout=2026-06-26&d1=2026-06-21&d2=2026-06-26&startDate=2026-06-21&endDate=2026-06-26&x_pwa=1&rfrr=HSR&pwa_ts=1776090464806&referrerUrl=aHR0cHM6Ly93d3cudnJiby5jb20vSG90ZWwtU2VhcmNo&useRewards=false&adults=4&children=1_17%2C1_17&regionId=6052089&destination=Limburg+Province%2C+Flemish+Region%2C+Belgium&destType=BOUNDING_BOX&latLong=50.973896%2C5.341968&bedroom_count_gt=3&property_reviews_group=loved_by_guests&searchId=234e4a51-2758-480a-b9f3-e6bf32224f11&sort=RECOMMENDED&top_dp=238&top_cur=USD&userIntent=&selectedRoomType=27197664&selectedRatePlan=000129d56e5abe2e449f8f888aaa4946fe65&expediaPropertyId=27197664", desc: "Vrbo listing \u2014 details TBD." },
-  { name: "Schinnen House",             url: "https://www.airbnb.com/rooms/1455384250449715788", desc: "Airbnb listing \u2014 details TBD." },
-  { name: "Burdinne Refuge",            url: "https://www.airbnb.com/rooms/42125862",            desc: "Airbnb listing \u2014 details TBD." },
+  { name: "Oerthe Valley",              url: "https://www.vrbo.com/1678257ha?chkin=2026-06-21&chkout=2026-06-26&d1=2026-06-21&d2=2026-06-26&startDate=2026-06-21&endDate=2026-06-26&x_pwa=1&rfrr=HSR&pwa_ts=1776090464806&referrerUrl=aHR0cHM6Ly93d3cudnJiby5jb20vSG90ZWwtU2VhcmNo&useRewards=false&adults=4&children=1_17%2C1_17&regionId=6052089&destination=Limburg+Province%2C+Flemish+Region%2C+Belgium&destType=BOUNDING_BOX&latLong=50.973896%2C5.341968&bedroom_count_gt=3&property_reviews_group=loved_by_guests&searchId=234e4a51-2758-480a-b9f3-e6bf32224f11&sort=RECOMMENDED&top_dp=238&top_cur=USD&userIntent=&selectedRoomType=27197664&selectedRatePlan=000129d56e5abe2e449f8f888aaa4946fe65&expediaPropertyId=27197664", desc: "3-star g\u00eete in the Ourthe valley, sleeps 7\u20139. Refurbished on 3 levels, covered terrace w/ gas BBQ, 3 bedrooms + convertible sofa." },
+  { name: "Schinnen House",             url: "https://www.airbnb.com/rooms/1455384250449715788", desc: "Luxury villa, sleeps 8. Private bathrooms in every bedroom, heated spa bath, spacious terrace + green garden." },
+  { name: "Burdinne Refuge",            url: "https://www.airbnb.com/rooms/42125862",            desc: "4BR/4BA g\u00eete, sleeps 9. Heated in-ground pool, hammam, 3,300m\u00b2 garden. In the Burdinale-Mehaigne Natural Park." },
 ];
 
 export const amsterdamRentals: Rental[] = [
