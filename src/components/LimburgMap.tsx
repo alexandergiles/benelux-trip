@@ -83,7 +83,7 @@ export default function LimburgMap() {
     // House base marker
     L.marker([houseBase.lat, houseBase.lng], { icon: createDotIcon('#0F6E56', 22) })
       .addTo(map)
-      .bindTooltip('<strong style="font-size:13px">Borgloon</strong>', {
+      .bindTooltip('<strong style="font-size:13px">Flanders</strong>', {
         permanent: true,
         direction: 'right',
         offset: [14, 0],
