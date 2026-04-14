@@ -55,7 +55,7 @@ export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, a
       <h2 className="font-heading text-3xl text-ink mb-8">{heading}</h2>
 
       <div className={`${tintStyles[tint]} rounded-lg overflow-hidden border border-sand max-w-2xl`}>
-        <img src={base + photo} alt={photoAlt} className="w-full h-48 object-cover" loading="lazy" />
+        <img src={base + photo} alt={photoAlt} className="w-full h-auto" loading="lazy" />
         <div className="p-6">
           <h3 className={`font-heading text-xl ${accentStyles[accent]} mb-4`}>{label}</h3>
           <RentalList rentals={rentals} />
