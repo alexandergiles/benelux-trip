@@ -3,7 +3,7 @@ import L from 'leaflet'
 import { dayTrips } from '../data/trip'
 import { base } from '../data/base'
 
-const houseBase = { name: "House base", lat: 50.800, lng: 5.346 };
+const houseBase = { name: "House base", lat: 50.602, lng: 5.105 };
 
 interface TripMeta {
   dist: string;
@@ -14,16 +14,16 @@ interface TripMeta {
 }
 
 const tripMeta: Record<string, TripMeta> = {
-  "Maastricht":           { dist: "30 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/maastricht.jpg" },
-  "Valkenburg":           { dist: "35 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/valkenburg.jpg" },
-  "Drielandenpunt":       { dist: "45 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/drielandenpunt.jpg" },
-  "Aachen (Germany)":     { dist: "50 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/aachen.jpg" },
-  "Li\u00e8ge (Belgium)": { dist: "40 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/maastricht.jpg" },
-  "Han-sur-Lesse":        { dist: "1h 15m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/han-sur-lesse.jpg" },
-  "Bokrijk (Belgium)":    { dist: "25 min",  direction: "top",    offset: [0, -22],  permanent: true,  photo: "photos/bokrijk.jpg" },
+  "Maastricht":           { dist: "55 min",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/maastricht.jpg" },
+  "Valkenburg":           { dist: "1h",      direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/valkenburg.jpg" },
+  "Drielandenpunt":       { dist: "1h 5m",   direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/drielandenpunt.jpg" },
+  "Aachen (Germany)":     { dist: "1h 10m",  direction: "right",  offset: [22, 0],   permanent: false, photo: "photos/aachen.jpg" },
+  "Li\u00e8ge (Belgium)": { dist: "25 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/maastricht.jpg" },
+  "Han-sur-Lesse":        { dist: "1h",      direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/han-sur-lesse.jpg" },
+  "Bokrijk (Belgium)":    { dist: "55 min",  direction: "top",    offset: [0, -22],  permanent: true,  photo: "photos/bokrijk.jpg" },
   "Antwerp (Belgium)":    { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/antwerp.jpg" },
-  "Brussels (Belgium)":   { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/brussels.jpg" },
-  "Cologne (Germany)":    { dist: "1h 40m",  direction: "right",  offset: [22, 0],   permanent: true,  photo: "photos/cologne.jpg" },
+  "Brussels (Belgium)":   { dist: "55 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/brussels.jpg" },
+  "Cologne (Germany)":    { dist: "2h",      direction: "right",  offset: [22, 0],   permanent: true,  photo: "photos/cologne.jpg" },
 };
 
 function createPhotoIcon(photo: string) {
@@ -83,7 +83,7 @@ export default function LimburgMap() {
     // House base marker
     L.marker([houseBase.lat, houseBase.lng], { icon: createDotIcon('#0F6E56', 22) })
       .addTo(map)
-      .bindTooltip('<strong style="font-size:13px">Flanders</strong>', {
+      .bindTooltip('<strong style="font-size:13px">Burdinne</strong>', {
         permanent: true,
         direction: 'right',
         offset: [14, 0],
@@ -124,7 +124,7 @@ export default function LimburgMap() {
   return (
     <div className="mt-10 mb-2">
       <h3 className="font-heading text-xl text-ink mb-1">Day trip distances</h3>
-      <p className="text-sm text-muted mb-4">All day trips radiate from the house base near Borgloon. Three countries in under two hours.</p>
+      <p className="text-sm text-muted mb-4">All day trips radiate from the house base near Burdinne. Three countries in under two hours.</p>
       <div
         ref={mapRef}
         className="w-full rounded-lg overflow-hidden border border-sand"

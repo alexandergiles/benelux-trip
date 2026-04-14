@@ -21,17 +21,17 @@ function App() {
       <RouteMap />
       <Rentals
         id="rentals-flanders"
-        heading="Flanders: June 22–26"
+        heading="Burdinne: June 21–26"
         rentals={limburgRentals}
-        photo="photos/rental-borgloon.jpg"
-        photoAlt="Flanders rental house"
+        photo="photos/rental-burdinne.jpg"
+        photoAlt="Refuge du Saule — Burdinne, Wallonie, Belgium"
         tint="limburg-tint"
         accent="limburg"
-        label="House options"
+        label="The house"
       />
       <DayOptions
         id="limburg"
-        heading="Flanders: day options"
+        heading="Wallonie: day options"
         subtitle="Pick ~4, decide game-time based on vibes / weather"
         options={limburgOptions}
         accentColor="limburg"

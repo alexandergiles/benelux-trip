@@ -37,7 +37,7 @@ export interface NextStep {
 }
 
 export const bases: Base[] = [
-  { name: "Flanders",        sub: "Days 1\u20136 \u00b7 5 nights", lat: 50.800, lng: 5.346, color: "#0F6E56", size: "large" },
+  { name: "Burdinne",        sub: "Days 1\u20136 \u00b7 5 nights", lat: 50.602, lng: 5.105, color: "#0F6E56", size: "large" },
   { name: "Amsterdam",       sub: "Days 6\u201310 \u00b7 4 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
 ];
 
@@ -118,11 +118,7 @@ export const amsterdamOptions: ActivityOption[] = [
 ];
 
 export const limburgRentals: Rental[] = [
-  { name: "Borgloon Castle",            url: "https://www.airbnb.com/rooms/1281740265852992133", desc: "Castle apartment in Gors Opleeuw. Shared heated pool, orangery. Rolling Haspengouw landscape, adjacent to Mombeek nature reserve." },
-  { name: "Halte St. Gerlach",          url: "https://www.airbnb.co.in/rooms/32008268?source_impression_id=p3_1776086322_P3rm_a0ivOGpYn09", desc: "Converted 1903 train station near vineyards." },
-  { name: "Oerthe Valley",              url: "https://www.vrbo.com/1678257ha?chkin=2026-06-21&chkout=2026-06-26&d1=2026-06-21&d2=2026-06-26&startDate=2026-06-21&endDate=2026-06-26&x_pwa=1&rfrr=HSR&pwa_ts=1776090464806&referrerUrl=aHR0cHM6Ly93d3cudnJiby5jb20vSG90ZWwtU2VhcmNo&useRewards=false&adults=4&children=1_17%2C1_17&regionId=6052089&destination=Limburg+Province%2C+Flemish+Region%2C+Belgium&destType=BOUNDING_BOX&latLong=50.973896%2C5.341968&bedroom_count_gt=3&property_reviews_group=loved_by_guests&searchId=234e4a51-2758-480a-b9f3-e6bf32224f11&sort=RECOMMENDED&top_dp=238&top_cur=USD&userIntent=&selectedRoomType=27197664&selectedRatePlan=000129d56e5abe2e449f8f888aaa4946fe65&expediaPropertyId=27197664", desc: "G\u00eete in the Ourthe valley. Refurbished on 3 levels, covered terrace w/ gas BBQ." },
-  { name: "Schinnen House",             url: "https://www.airbnb.com/rooms/1455384250449715788", desc: "Luxury villa. Private bathrooms in every bedroom, heated spa bath, spacious terrace + green garden." },
-  { name: "Burdinne Refuge",            url: "https://www.airbnb.com/rooms/42125862",            desc: "4BR/4BA g\u00eete. Heated in-ground pool, hammam, 3,300m\u00b2 garden. In the Burdinale-Mehaigne Natural Park." },
+  { name: "Refuge du Saule \u00b7 Burdinne",  url: "https://www.airbnb.com/rooms/42125862", desc: "4BR/4BA g\u00eete in the Burdinale-Mehaigne Natural Park. Heated in-ground pool, hammam, 3,300m\u00b2 garden, piano room." },
 ];
 
 export const amsterdamRentals: Rental[] = [
@@ -134,7 +130,7 @@ export const amsterdamRentals: Rental[] = [
 
 export const nextSteps: NextStep[] = [
   { number: 1, title: "Book airfare", desc: "" },
-  { number: 2, title: "Book the Flanders house", desc: "" },
+  { number: 2, title: "Book the Burdinne house", desc: "" },
   { number: 3, title: "Book Amsterdam apartment", desc: "" },
   { number: 4, title: "Reserve the rental car", desc: "" },
 ];
