@@ -24,8 +24,8 @@ export default function DayOptions({ id, heading, subtitle, options, accentColor
 
   return (
     <section id={id} ref={ref} className="section-fade max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <h2 className="font-heading text-3xl text-ink mb-1">{heading}</h2>
-      <p className="text-muted mb-8">{subtitle}</p>
+      <h2 className={`font-heading text-3xl text-ink ${subtitle ? 'mb-1' : 'mb-8'}`}>{heading}</h2>
+      {subtitle && <p className="text-muted mb-8">{subtitle}</p>}
 
       <div className={gridClass}>
         {options.map((opt) => (

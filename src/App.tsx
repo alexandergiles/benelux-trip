@@ -54,7 +54,7 @@ function App() {
       <DayOptions
         id="amsterdam"
         heading="Amsterdam: day options"
-        subtitle="3 nights in the city. Mix culture, kid energy, and wandering."
+        subtitle=""
         options={amsterdamOptions}
         accentColor="coral"
         tintColor="coral-tint"
