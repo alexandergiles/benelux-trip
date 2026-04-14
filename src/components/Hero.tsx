@@ -13,8 +13,8 @@ export default function Hero() {
           <ul className="space-y-2 text-white/85 text-base sm:text-lg">
             <li>Jun 21 — Fly from Washington, DC to Amsterdam, Netherlands</li>
             <li>Jun 21–26 — Countryside house in the Flanders Region, Belgium</li>
-            <li>Jun 27–29 — Amsterdam, Netherlands</li>
-            <li>Jun 29 — Fly home to Washington, DC</li>
+            <li>Jun 27–30 — Amsterdam, Netherlands</li>
+            <li>Jun 30 — Fly home to Washington, DC</li>
           </ul>
         </div>
 

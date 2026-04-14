@@ -38,7 +38,7 @@ export interface NextStep {
 
 export const bases: Base[] = [
   { name: "Flanders",        sub: "Days 1\u20136 \u00b7 5 nights", lat: 50.800, lng: 5.346, color: "#0F6E56", size: "large" },
-  { name: "Amsterdam",       sub: "Days 6\u20139 \u00b7 3 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
+  { name: "Amsterdam",       sub: "Days 6\u201310 \u00b7 4 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
 ];
 
 export const dayTrips: DayTrip[] = [
