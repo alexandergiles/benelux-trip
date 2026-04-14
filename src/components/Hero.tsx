@@ -12,8 +12,8 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Family Vaca 2026: The Low Countries</h1>
           <ul className="space-y-2 text-white/85 text-base sm:text-lg">
             <li>Jun 21 — Fly from Washington, DC to Amsterdam, Netherlands</li>
-            <li>Jun 21–26 — Countryside house in Burdinne, Wallonie, Belgium</li>
-            <li>Jun 27–30 — Amsterdam, Netherlands</li>
+            <li>Jun 22–26 — Countryside house in Burdinne, Wallonie, Belgium</li>
+            <li>Jun 26–30 — Amsterdam, Netherlands</li>
             <li>Jun 30 — Fly home to Washington, DC</li>
           </ul>
         </div>

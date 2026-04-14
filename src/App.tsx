@@ -21,7 +21,7 @@ function App() {
       <RouteMap />
       <Rentals
         id="rentals-flanders"
-        heading="Burdinne: June 21–26"
+        heading="Burdinne: June 22–26"
         rentals={limburgRentals}
         photo="photos/rental-burdinne.jpg"
         photoAlt="Refuge du Saule — Burdinne, Wallonie, Belgium"
