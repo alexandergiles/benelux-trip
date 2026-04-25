@@ -11,10 +11,10 @@ export default function Hero() {
         <div className="bg-terracotta text-white flex flex-col justify-center px-8 sm:px-12 py-12 md:py-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Family Vaca 2026: The Low Countries</h1>
           <ul className="space-y-2 text-white/85 text-base sm:text-lg">
-            <li>Jun 21 — Fly from Washington, DC to Amsterdam, Netherlands</li>
+            <li>Jun 21 — UA946 · IAD → AMS · dep 5:30 PM</li>
             <li>Jun 22–26 — Countryside house in Burdinne, Wallonie, Belgium</li>
-            <li>Jun 26 – Jul 1 — Amsterdam, Netherlands</li>
-            <li>Jul 1 — Fly home to Washington, DC</li>
+            <li>Jun 26–30 — Amsterdam, Netherlands</li>
+            <li>Jun 30 — KL651 · AMS → IAD · 13:15 – 15:35</li>
           </ul>
         </div>
 

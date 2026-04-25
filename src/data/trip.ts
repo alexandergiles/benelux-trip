@@ -39,7 +39,7 @@ export interface NextStep {
 
 export const bases: Base[] = [
   { name: "Burdinne",        sub: "Days 1\u20136 \u00b7 5 nights", lat: 50.602, lng: 5.105, color: "#0F6E56", size: "large" },
-  { name: "Amsterdam",       sub: "Days 6\u201311 \u00b7 5 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
+  { name: "Amsterdam",       sub: "Days 6\u201310 \u00b7 4 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
 ];
 
 export const dayTrips: DayTrip[] = [
@@ -150,9 +150,9 @@ export const limburgRentals: Rental[] = [
 ];
 
 export const amsterdamRentals: Rental[] = [
-  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
-  { name: "Design House Center",        url: "https://www.airbnb.com/rooms/1658882576998670361?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3o4X1_ya__iGq-8&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "150m\u00b2 over 4 floors. 3BR with king beds, 3 bathrooms (one with tub + double shower). A/C in top bedrooms. Private entrance, fully equipped kitchen." },
-  { name: "Oud-Zuid Family Home",        url: "https://www.airbnb.com/rooms/36483173?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3DwCOAbjYyc1nth&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Near Amsterdam Zuid station + tram stop. Roof terrace (all-day sun), two balconies. Close to Vondelpark and museums." },
+  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
+  { name: "Design House Center",        url: "https://www.airbnb.com/rooms/1658882576998670361?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3o4X1_ya__iGq-8&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "150m\u00b2 over 4 floors. 3BR with king beds, 3 bathrooms (one with tub + double shower). A/C in top bedrooms. Private entrance, fully equipped kitchen." },
+  { name: "Oud-Zuid Family Home",        url: "https://www.airbnb.com/rooms/36483173?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3DwCOAbjYyc1nth&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Near Amsterdam Zuid station + tram stop. Roof terrace (all-day sun), two balconies. Close to Vondelpark and museums." },
 ];
 
 export const nextSteps: NextStep[] = [
