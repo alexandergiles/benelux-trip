@@ -67,16 +67,23 @@ export default function RouteMap() {
       ).addTo(map)
     })
 
-    // Dashed polyline between bases
-    L.polyline(
-      bases.map((b) => [b.lat, b.lng] as L.LatLngTuple),
-      { color: '#B85042', weight: 2, dashArray: '8 6', opacity: 0.7 }
-    ).addTo(map)
+    // Driving route: Burdinne → Brussels → Antwerp (E19) → Rotterdam (A16) → The Hague → Amsterdam
+    const driveRoute: L.LatLngTuple[] = [
+      [bases[0].lat, bases[0].lng],   // Burdinne
+      [50.847, 4.357],                // Brussels
+      [51.221, 4.402],                // Antwerp
+      [51.588, 4.776],                // Breda (A16 border crossing)
+      [51.926, 4.470],                // Rotterdam
+      [52.078, 4.310],                // The Hague
+      [bases[1].lat, bases[1].lng],   // Amsterdam
+    ]
+    L.polyline(driveRoute, {
+      color: '#B85042', weight: 2.5, dashArray: '8 6', opacity: 0.75,
+    }).addTo(map)
 
-    // Car icon on the drive route between bases
-    const midLat = (bases[0].lat + bases[1].lat) / 2
-    const midLng = (bases[0].lng + bases[1].lng) / 2
-    L.marker([midLat, midLng], {
+    // Car icon roughly mid-route (between Antwerp and Rotterdam)
+    const carPos = driveRoute[3]
+    L.marker(carPos, {
       icon: L.divIcon({
         className: '',
         iconSize: [28, 28],
@@ -85,6 +92,32 @@ export default function RouteMap() {
       }),
       interactive: false,
     }).addTo(map)
+
+    // Route waypoint labels (small, muted)
+    const waypoints: { name: string; lat: number; lng: number; offset: [number, number]; direction: L.Direction }[] = [
+      { name: 'Brussels',   lat: 50.847, lng: 4.357, offset: [-6, 0], direction: 'left' },
+      { name: 'Antwerp',    lat: 51.221, lng: 4.402, offset: [-6, 0], direction: 'left' },
+      { name: 'Rotterdam',  lat: 51.926, lng: 4.470, offset: [-6, 0], direction: 'left' },
+      { name: 'The Hague',  lat: 52.078, lng: 4.310, offset: [-6, 0], direction: 'left' },
+    ]
+    waypoints.forEach((w) => {
+      L.marker([w.lat, w.lng], {
+        icon: L.divIcon({
+          className: '',
+          iconSize: [6, 6],
+          iconAnchor: [3, 3],
+          html: '<div style="width:6px;height:6px;border-radius:50%;background:#B85042;opacity:0.7"></div>',
+        }),
+        interactive: false,
+      })
+        .addTo(map)
+        .bindTooltip(`<span style="color:#6B5E57;font-size:11px">${w.name}</span>`, {
+          permanent: true,
+          direction: w.direction,
+          offset: w.offset,
+          className: 'route-waypoint-label',
+        })
+    })
 
     // Flight path into AMS — starts well beyond left map edge to cross full width
     const ams = bases.find((b) => b.name === 'Amsterdam')!
