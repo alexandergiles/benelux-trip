@@ -43,7 +43,7 @@ function App() {
       </DayOptions>
       <Rentals
         id="rentals-amsterdam"
-        heading="Amsterdam: June 26–30"
+        heading="Amsterdam: June 26 – July 1"
         rentals={amsterdamRentals}
         photo="photos/rental-amsterdam.jpg"
         photoAlt="Amsterdam apartment"

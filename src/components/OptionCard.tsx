@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react'
 import type { ActivityOption } from '../data/trip'
 import { base } from '../data/base'
 
@@ -30,16 +30,42 @@ export default function OptionCard({ option, accentColor, tintColor }: Props) {
   return (
     <div className={`${bgStyles[tintColor]} border-l-4 ${borderStyles[accentColor]} rounded-lg overflow-hidden`}>
       {option.photo && (
-        <img
-          src={base + option.photo}
-          alt={option.photoAlt || option.title}
-          className="w-full h-44 object-cover"
-          style={option.photoPosition ? { objectPosition: option.photoPosition } : undefined}
-          loading="lazy"
-        />
+        option.url ? (
+          <a href={option.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${option.title} info in a new tab`}>
+            <img
+              src={base + option.photo}
+              alt={option.photoAlt || option.title}
+              className="w-full h-44 object-cover"
+              style={option.photoPosition ? { objectPosition: option.photoPosition } : undefined}
+              loading="lazy"
+            />
+          </a>
+        ) : (
+          <img
+            src={base + option.photo}
+            alt={option.photoAlt || option.title}
+            className="w-full h-44 object-cover"
+            style={option.photoPosition ? { objectPosition: option.photoPosition } : undefined}
+            loading="lazy"
+          />
+        )
       )}
       <div className="p-5">
-        <h3 className="font-heading text-lg text-ink mb-0.5">{option.title}</h3>
+        <h3 className="font-heading text-lg text-ink mb-0.5">
+          {option.url ? (
+            <a
+              href={option.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-1 hover:underline ${textStyles[accentColor]}`}
+            >
+              {option.title}
+              <ExternalLink size={14} className="opacity-60" />
+            </a>
+          ) : (
+            option.title
+          )}
+        </h3>
         <p className="text-sm text-muted italic mb-2">{option.tag}</p>
         <p className="text-sm text-ink leading-relaxed">{option.body}</p>
 

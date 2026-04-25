@@ -22,6 +22,7 @@ export interface ActivityOption {
   photoPosition?: string;
   expandable?: boolean;
   details?: string[];
+  url?: string;
 }
 
 export interface Rental {
@@ -38,7 +39,7 @@ export interface NextStep {
 
 export const bases: Base[] = [
   { name: "Burdinne",        sub: "Days 1\u20136 \u00b7 5 nights", lat: 50.602, lng: 5.105, color: "#0F6E56", size: "large" },
-  { name: "Amsterdam",       sub: "Days 6\u201310 \u00b7 4 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
+  { name: "Amsterdam",       sub: "Days 6\u201311 \u00b7 5 nights", lat: 52.370, lng: 4.895, color: "#B85042", size: "large" },
 ];
 
 export const dayTrips: DayTrip[] = [
@@ -52,16 +53,21 @@ export const dayTrips: DayTrip[] = [
   { name: "Antwerp (Belgium)",     lat: 51.221, lng: 4.402 },
   { name: "Brussels (Belgium)",    lat: 50.847, lng: 4.357 },
   { name: "Cologne (Germany)",     lat: 50.938, lng: 6.960 },
+  { name: "Ghent (Belgium)",       lat: 51.054, lng: 3.717 },
+  { name: "Bruges (Belgium)",      lat: 51.209, lng: 3.224 },
 ];
 
 export const limburgOptions: ActivityOption[] = [
   { title: "Maastricht", tag: "Half day",
+    url: "https://www.visitmaastricht.com/en",
     photo: "photos/maastricht.jpg", photoAlt: "Maastricht old town along the Maas river",
     body: "Cobblestoned old town on the Maas river. Vrijthof square, sidewalk caf\u00e9s on Onze Lieve Vrouweplein, Sint-Pietersberg cave tunnels (guided tours hourly, cool underground). Bookshop inside a 13th-century Dominican church across the river." },
   { title: "Valkenburg", tag: "Half day",
+    url: "https://www.visitzuidlimburg.com/en/destinations/valkenburg",
     photo: "photos/valkenburg.jpg", photoAlt: "Valkenburg town with hilltop castle ruins above",
     body: "Only hilltop castle ruin in the Netherlands, above a town built on caves. Short steep climb to the ruins, then velvet caves and coal-mine museum below. Main street has ice cream, pancake houses, and a chairlift over the valley." },
   { title: "Bokrijk (Belgium)", tag: "Full day",
+    url: "https://www.bokrijk.be/en",
     photo: "photos/bokrijk.jpg", photoAlt: "Cycling Through Water path submerged in a pond at Bokrijk, Belgium", photoPosition: "center 75%",
     body: "Bike rentals at P1 Kasteel (trailers available). \u201cCycling Through Water\u201d path \u2014 submerged bike lane through a pond, best mid-morning before tour buses. Bokrijk Open-Air Museum has costumed blacksmiths, farm animals, Speeltuin playground. Lunch at Koetshuis. ~25 min drive. Closed some Mondays.",
     expandable: true, details: [
@@ -71,48 +77,70 @@ export const limburgOptions: ActivityOption[] = [
       "Cycling Through the Trees is a separate 45-min drive \u2014 probably too much for the same day.",
     ] },
   { title: "Aachen (Germany)", tag: "Half day",
+    url: "https://www.aachen-tourismus.de/en/",
     photo: "photos/aachen.jpg", photoAlt: "Historic European old town with cathedral spire",
     body: "50 min drive across the German border. Charlemagne\u2019s cathedral (UNESCO) \u2014 mosaics, marble throne, 1,200 years old. Compact walkable old quarter. Printen cookies (local spiced gingerbread), Elisengarten park. Carolus Thermen thermal baths nearby." },
   { title: "Han-sur-Lesse (Belgium)", tag: "Full day",
+    url: "https://www.grotte-de-han.be/en",
     photo: "photos/han-sur-lesse.jpg", photoAlt: "Dramatic cave interior with stalactites and underground river",
     body: "~1h 15m into the Belgian Ardennes. Vintage tram to the cave entrance, then a guided walk through massive underground chambers \u2014 underground river, stalactites, light show finale. Some stairs inside. Wildlife park above ground with European bison and wolves." },
   { title: "Drielandenpunt (Vaals)", tag: "Half day",
+    url: "https://www.visitzuidlimburg.com/en/locations/drielandenpunt",
     photo: "photos/drielandenpunt.jpg", photoAlt: "Panoramic view of rolling green hills at a border point",
     body: "Highest point in the Netherlands (322m). Marker post where NL, Belgium, and Germany meet. Hedge maze, playground, panoramic observation tower (\u20ac5), a few caf\u00e9s. Pairs with a lunch stop in Vaals village." },
   { title: "Antwerp (Belgium)", tag: "Full day",
+    url: "https://www.visitantwerpen.be/en",
     photo: "photos/antwerp.jpg", photoAlt: "Antwerp cathedral and historic city center",
     body: "~1h 10m north. Grote Markt, cathedral with Rubens paintings, MAS museum rooftop (free escalator ride up for panoramic views). Zoo next to Centraal Station. Diamond district, chocolate shops, frites stands. Scheldt river promenade." },
   { title: "Brussels (Belgium)", tag: "Full day",
+    url: "https://visit.brussels/en",
     photo: "photos/brussels.jpg", photoAlt: "Brussels Grand Place square with ornate guild houses",
     body: "~1h 10m west. Grand Place \u2014 ornate guild houses, one of Europe\u2019s most photographed squares. Manneken Pis (smaller than expected). Comic Strip Museum with life-sized Tintin and Smurfs. Waffles from Maison Dandoy, chocolate from Pierre Marcolini. Parking underground at Grand Place." },
   { title: "Cologne (Germany)", tag: "Full day",
+    url: "https://www.cologne-tourism.com/",
     photo: "photos/cologne.jpg", photoAlt: "Cologne Cathedral twin spires towering over the Rhine river",
     body: "~1h 40m northeast. The Dom (cathedral) \u2014 Gothic, free to enter, 533 steps to the top. Chocolate Museum on the Rhine with chocolate fountain and factory tour. Compact walkable old town along the river. Rhine river cruises available." },
+  { title: "Ghent (Belgium)", tag: "Full day",
+    url: "https://visit.gent.be/en",
+    photo: "photos/ghent.jpg", photoAlt: "Ghent medieval guild houses along the Graslei canal",
+    body: "~1h 45m northwest. Medieval guild houses lining the Graslei and Korenlei canals, Gravensteen castle (climbable battlements), Saint Bavo\u2019s Cathedral with the Van Eyck altarpiece. Less touristy than Bruges, livelier student-town feel. Boat tours from the Korenlei." },
+  { title: "Bruges (Belgium)", tag: "Full day",
+    url: "https://www.visitbruges.be/en",
+    photo: "photos/bruges.jpg", photoAlt: "Bruges canal with stepped-gable houses and a stone bridge",
+    body: "~2h northwest. UNESCO old town \u2014 cobbled lanes, canals, stepped-gable houses, the Markt and Belfort tower (366 steps). Horse-drawn carriages, frites at \u2019t Frietkot, chocolate shops on every block. Canal boat tours from multiple docks. Best early morning before day-trippers arrive." },
 ];
 
 export const amsterdamOptions: ActivityOption[] = [
   { title: "Canal boat ride",      tag: "1 hour",
+    url: "https://www.iamsterdam.com/en/see-and-do/things-to-do/canal-cruises",
     photo: "photos/canal-boat.jpg", photoAlt: "Amsterdam canal with boats and historic houses",
     body: "Small open-boat tours (Those Dam Boat Guys, Flagship Amsterdam) vs. big glass-top cruisers. One hour. Late afternoon light on the canals." },
   { title: "Rijksmuseum",          tag: "Half day",
+    url: "https://www.rijksmuseum.nl/en",
     photo: "photos/rijksmuseum.jpg", photoAlt: "The Rijksmuseum facade with its reflecting pool",
     body: "Free family treasure-hunt booklet at the desk. Vermeers, Night Watch. Garden and reflecting pool out front. 2\u20132.5 hours." },
   { title: "NEMO Science Museum",  tag: "Half day",
+    url: "https://www.nemosciencemuseum.nl/en/",
     photo: "photos/nemo.jpg", photoAlt: "NEMO Science Museum green copper building on Amsterdam waterfront",
     body: "Ship-shaped building. Hands-on experiments, water play, chain-reaction machines, rooftop splash pad with city views. Caf\u00e9 on the top floor." },
   { title: "Vondelpark",           tag: "Flexible",
+    url: "https://www.iamsterdam.com/en/see-and-do/destination/vondelpark",
     photo: "photos/vondelpark.jpg", photoAlt: "Leafy green paths and ponds in Vondelpark",
     body: "Bike rentals near the entrance. Six playgrounds, open-air caf\u00e9s (Groot Melkhuis), duck ponds, shallow wading pool in summer. Free, no tickets." },
   { title: "Artis Zoo",            tag: "Half day",
+    url: "https://www.artis.nl/en",
     photo: "photos/artis.jpg", photoAlt: "Zoo animals in a lush green historic setting",
     body: "Europe\u2019s oldest zoo, city center. Aquarium, planetarium, Micropia (microbe museum) next door. Plantage neighborhood caf\u00e9s nearby." },
   { title: "Zaanse Schans",        tag: "Half day",
+    url: "https://www.dezaanseschans.nl/en/",
     photo: "photos/zaanse-schans.jpg", photoAlt: "Dutch windmills along a river under dramatic skies",
     body: "20 min train from Centraal. Working windmills (go inside to see gears), clog-makers, cheese farms. Free to walk around; small fees for windmill interiors." },
   { title: "Pannenkoeken dinner",  tag: "Evening",
+    url: "https://www.pancake.nl/",
     photo: "photos/pancakes.jpg", photoAlt: "Golden Dutch pancake with toppings on a cast-iron pan",
     body: "Dinner-plate-sized Dutch pancakes, sweet or savory toppings. The Pancake Bakery (Prinsengracht) or Pancakes Amsterdam (multiple locations)." },
   { title: "Anne Frank House",     tag: "2 hours",
+    url: "https://www.annefrank.org/en/",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
     body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere." },
 ];
@@ -122,9 +150,9 @@ export const limburgRentals: Rental[] = [
 ];
 
 export const amsterdamRentals: Rental[] = [
-  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
-  { name: "Design House Center",        url: "https://www.airbnb.com/rooms/1658882576998670361?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3o4X1_ya__iGq-8&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "150m\u00b2 over 4 floors. 3BR with king beds, 3 bathrooms (one with tub + double shower). A/C in top bedrooms. Private entrance, fully equipped kitchen." },
-  { name: "Oud-Zuid Family Home",        url: "https://www.airbnb.com/rooms/36483173?check_in=2026-06-26&check_out=2026-06-29&search_mode=regular_search&source_impression_id=p3_1776093355_P3DwCOAbjYyc1nth&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Near Amsterdam Zuid station + tram stop. Roof terrace (all-day sun), two balconies. Close to Vondelpark and museums." },
+  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
+  { name: "Design House Center",        url: "https://www.airbnb.com/rooms/1658882576998670361?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3o4X1_ya__iGq-8&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "150m\u00b2 over 4 floors. 3BR with king beds, 3 bathrooms (one with tub + double shower). A/C in top bedrooms. Private entrance, fully equipped kitchen." },
+  { name: "Oud-Zuid Family Home",        url: "https://www.airbnb.com/rooms/36483173?check_in=2026-06-26&check_out=2026-07-01&search_mode=regular_search&source_impression_id=p3_1776093355_P3DwCOAbjYyc1nth&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Near Amsterdam Zuid station + tram stop. Roof terrace (all-day sun), two balconies. Close to Vondelpark and museums." },
 ];
 
 export const nextSteps: NextStep[] = [
