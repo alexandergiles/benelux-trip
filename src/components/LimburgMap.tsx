@@ -24,6 +24,8 @@ const tripMeta: Record<string, TripMeta> = {
   "Antwerp (Belgium)":    { dist: "1h 10m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/antwerp.jpg" },
   "Brussels (Belgium)":   { dist: "55 min",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/brussels.jpg" },
   "Cologne (Germany)":    { dist: "2h",      direction: "right",  offset: [22, 0],   permanent: true,  photo: "photos/cologne.jpg" },
+  "Ghent (Belgium)":      { dist: "1h 45m",  direction: "left",   offset: [-22, 0],  permanent: true,  photo: "photos/ghent.jpg" },
+  "Bruges (Belgium)":     { dist: "2h",      direction: "top",    offset: [0, -22],  permanent: true,  photo: "photos/bruges.jpg" },
 };
 
 function createPhotoIcon(photo: string) {
