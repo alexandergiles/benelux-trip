@@ -167,6 +167,10 @@ export const amsterdamRentals: Rental[] = [
   { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
 ];
 
+export const amsterdamAlternates: Rental[] = [
+  { name: "Amsterdam 4BR townhouse", url: "https://www.airbnb.com/rooms/809213938231652069?check_in=2026-06-26&check_out=2026-06-30&location=Amsterdam%2C%20Netherlands&search_mode=regular_search&source_impression_id=p3_1777170762_P3_IHm1mEIxP3adj&previous_page_section_name=1001&federated_search_id=339483cb-0cda-446b-82f7-34b512294157", desc: "4 bedrooms, 1.5 bathrooms." },
+];
+
 export const nextSteps: NextStep[] = [
   { number: 1, title: "Book airfare", desc: "" },
   { number: 2, title: "Book the Burdinne house", desc: "" },

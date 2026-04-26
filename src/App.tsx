@@ -11,6 +11,7 @@ import {
   amsterdamOptions,
   limburgRentals,
   amsterdamRentals,
+  amsterdamAlternates,
   nextSteps,
 } from './data/trip'
 
@@ -51,6 +52,8 @@ function App() {
         tint="coral-tint"
         accent="coral"
         label="The apartment"
+        alternates={amsterdamAlternates}
+        alternatesLabel="Alternate options"
       />
       <DayOptions
         id="amsterdam"

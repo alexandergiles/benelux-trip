@@ -12,6 +12,8 @@ interface Props {
   tint: 'limburg-tint' | 'coral-tint'
   accent: 'limburg' | 'coral'
   label: string
+  alternates?: Rental[]
+  alternatesLabel?: string
 }
 
 function RentalList({ rentals }: { rentals: Rental[] }) {
@@ -47,7 +49,7 @@ const accentStyles: Record<string, string> = {
   coral: 'text-coral',
 }
 
-export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, accent, label }: Props) {
+export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, accent, label, alternates, alternatesLabel }: Props) {
   const ref = useFadeIn()
 
   return (
@@ -59,6 +61,12 @@ export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, a
         <div className="p-6">
           <h3 className={`font-heading text-xl ${accentStyles[accent]} mb-4`}>{label}</h3>
           <RentalList rentals={rentals} />
+          {alternates && alternates.length > 0 && (
+            <div className="mt-6 pt-6 border-t border-sand">
+              <h4 className={`font-heading text-lg ${accentStyles[accent]} mb-3`}>{alternatesLabel ?? 'Alternate options'}</h4>
+              <RentalList rentals={alternates} />
+            </div>
+          )}
         </div>
       </div>
     </section>
