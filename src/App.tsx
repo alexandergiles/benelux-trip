@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import RouteMap from './components/RouteMap'
 import DayOptions from './components/DayOptions'
 import LimburgMap from './components/LimburgMap'
+import AmsterdamMap from './components/AmsterdamMap'
 import Rentals from './components/Rentals'
 import NextSteps from './components/NextSteps'
 import {
@@ -60,7 +61,9 @@ function App() {
         tintColor="coral-tint"
         columns={4}
         footer="Neighborhoods to wander: Jordaan (canals + cafés), De Pijp (Albert Cuyp market), Oost (leafy, local)."
-      />
+      >
+        <AmsterdamMap />
+      </DayOptions>
       <NextSteps steps={nextSteps} />
     </div>
   )

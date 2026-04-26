@@ -110,6 +110,18 @@ export const limburgOptions: ActivityOption[] = [
     body: "~2h northwest. UNESCO old town \u2014 cobbled lanes, canals, stepped-gable houses, the Markt and Belfort tower (366 steps). Horse-drawn carriages, frites at \u2019t Frietkot, chocolate shops on every block. Canal boat tours from multiple docks. Best early morning before day-trippers arrive." },
 ];
 
+export const amsterdamActivities: DayTrip[] = [
+  { name: "Canal boat ride",      lat: 52.3667, lng: 4.8862 },
+  { name: "Rijksmuseum",          lat: 52.3600, lng: 4.8852 },
+  { name: "NEMO Science Museum",  lat: 52.3737, lng: 4.9123 },
+  { name: "Vondelpark",           lat: 52.3580, lng: 4.8686 },
+  { name: "Artis Zoo",            lat: 52.3667, lng: 4.9152 },
+  { name: "Zaanse Schans",        lat: 52.4744, lng: 4.8201 },
+  { name: "Pannenkoeken dinner",  lat: 52.3744, lng: 4.8836 },
+  { name: "Anne Frank House",     lat: 52.3752, lng: 4.8840 },
+  { name: "Aloha bowling",        lat: 52.3754, lng: 4.9445 },
+];
+
 export const amsterdamOptions: ActivityOption[] = [
   { title: "Canal boat ride",      tag: "1 hour",
     url: "https://www.iamsterdam.com/en/see-and-do/things-to-do/canal-cruises",
@@ -143,6 +155,8 @@ export const amsterdamOptions: ActivityOption[] = [
     url: "https://www.annefrank.org/en/",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
     body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere." },
+  { title: "Aloha bowling",        tag: "Evening",
+    body: "Bowling lanes on Borneo eiland, in the former Tropicana building. Bar food, drinks, a bit kitsch \u2014 a fun rainy-evening pivot if museums are closed." },
 ];
 
 export const limburgRentals: Rental[] = [
