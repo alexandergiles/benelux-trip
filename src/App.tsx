@@ -45,11 +45,11 @@ function App() {
         id="rentals-amsterdam"
         heading="Amsterdam: June 26–30"
         rentals={amsterdamRentals}
-        photo="photos/rental-amsterdam.jpg"
-        photoAlt="Amsterdam apartment"
+        photo="photos/rental-amsterdam.avif"
+        photoAlt="Eric Vökel IJ River Suite — Amsterdam"
         tint="coral-tint"
         accent="coral"
-        label="Apartment options"
+        label="The apartment"
       />
       <DayOptions
         id="amsterdam"

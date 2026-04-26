@@ -156,6 +156,5 @@ export const amsterdamRentals: Rental[] = [
 export const nextSteps: NextStep[] = [
   { number: 1, title: "Book airfare", desc: "" },
   { number: 2, title: "Book the Burdinne house", desc: "" },
-  { number: 3, title: "Book Amsterdam apartment", desc: "" },
-  { number: 4, title: "Reserve the rental car", desc: "" },
+  { number: 3, title: "Reserve the rental car", desc: "" },
 ];
