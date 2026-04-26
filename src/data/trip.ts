@@ -169,6 +169,7 @@ export const amsterdamRentals: Rental[] = [
 
 export const amsterdamAlternates: Rental[] = [
   { name: "Amsterdam 4BR townhouse", url: "https://www.airbnb.com/rooms/809213938231652069?check_in=2026-06-26&check_out=2026-06-30&location=Amsterdam%2C%20Netherlands&search_mode=regular_search&source_impression_id=p3_1777170762_P3_IHm1mEIxP3adj&previous_page_section_name=1001&federated_search_id=339483cb-0cda-446b-82f7-34b512294157", desc: "4 bedrooms, 1.5 bathrooms." },
+  { name: "Amsterdam canal-house listing", url: "https://www.airbnb.com/rooms/1044448?check_in=2026-06-26&check_out=2026-06-30&location=Amsterdam%2C%20Netherlands&search_mode=regular_search&source_impression_id=p3_1777170886_P3B2nVjF6r2VSQTe&previous_page_section_name=1001&federated_search_id=339483cb-0cda-446b-82f7-34b512294157", desc: "" },
 ];
 
 export const nextSteps: NextStep[] = [
