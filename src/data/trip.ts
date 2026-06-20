@@ -156,10 +156,10 @@ export const amsterdamOptions: ActivityOption[] = [
   { title: "Anne Frank House",     tag: "2 hours",
     url: "https://www.annefrank.org/en/",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
-    body: "Tickets booked: 4 timed-entry tickets, two pairs. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere.",
+    body: "Booked across two days \u2014 Saturday's intro program (guided, English) plus Sunday morning's standard timed entry. 1.5\u20132 hours each. Caresse + Melissa while Alex takes kids elsewhere.",
     tickets: [
-      { label: "Tickets \u00b7 pair 1 (2)", url: "tickets/anne-frank-pair-1.pdf" },
-      { label: "Tickets \u00b7 pair 2 (2)", url: "tickets/anne-frank-pair-2.pdf" },
+      { label: "Sat 27 Jun \u00b7 10:15 \u00b7 Intro program (2)", url: "tickets/anne-frank-pair-1.pdf" },
+      { label: "Sun 28 Jun \u00b7 09:15 \u00b7 Timed entry (2)",  url: "tickets/anne-frank-pair-2.pdf" },
     ] },
   { title: "Aloha bowling",        tag: "Evening",
     body: "Bowling lanes on Borneo eiland, in the former Tropicana building. Bar food, drinks, a bit kitsch \u2014 a fun rainy-evening pivot if museums are closed." },
