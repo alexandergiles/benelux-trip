@@ -4,7 +4,7 @@ const PBKDF2_ITERATIONS = 100_000
 const SESSION_KEY = 'ticket-password'
 const blobCache = new Map<string, string>()
 
-async function deriveKey(password: string, salt: Uint8Array): Promise<CryptoKey> {
+async function deriveKey(password: string, salt: BufferSource): Promise<CryptoKey> {
   const baseKey = await crypto.subtle.importKey(
     'raw',
     new TextEncoder().encode(password),
@@ -25,9 +25,9 @@ async function decryptToBlob(url: string, password: string): Promise<Blob> {
   const res = await fetch(url)
   if (!res.ok) throw new Error(`fetch failed: ${res.status}`)
   const buf = new Uint8Array(await res.arrayBuffer())
-  const salt = buf.slice(0, 16)
-  const iv = buf.slice(16, 28)
-  const ciphertext = buf.slice(28)
+  const salt = buf.slice(0, 16) as BufferSource
+  const iv = buf.slice(16, 28) as BufferSource
+  const ciphertext = buf.slice(28) as BufferSource
   const key = await deriveKey(password, salt)
   const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
   return new Blob([plain], { type: 'application/pdf' })
