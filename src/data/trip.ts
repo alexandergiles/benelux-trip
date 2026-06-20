@@ -23,6 +23,7 @@ export interface ActivityOption {
   expandable?: boolean;
   details?: string[];
   url?: string;
+  tickets?: { label: string; url: string }[];
 }
 
 export interface Rental {
@@ -35,6 +36,7 @@ export interface NextStep {
   number: number;
   title: string;
   desc: string;
+  done?: boolean;
 }
 
 export const bases: Base[] = [
@@ -154,7 +156,11 @@ export const amsterdamOptions: ActivityOption[] = [
   { title: "Anne Frank House",     tag: "2 hours",
     url: "https://www.annefrank.org/en/",
     photo: "photos/anne-frank.jpg", photoAlt: "Amsterdam canal houses in the Jordaan neighborhood",
-    body: "Tickets release online exactly 6 weeks before visit date \u2014 sell out within hours. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere." },
+    body: "Tickets booked: 4 timed-entry tickets, two pairs. 1.5\u20132 hours. Caresse + Melissa while Alex takes kids elsewhere.",
+    tickets: [
+      { label: "Tickets \u00b7 pair 1 (2)", url: "tickets/anne-frank-pair-1.pdf" },
+      { label: "Tickets \u00b7 pair 2 (2)", url: "tickets/anne-frank-pair-2.pdf" },
+    ] },
   { title: "Aloha bowling",        tag: "Evening",
     body: "Bowling lanes on Borneo eiland, in the former Tropicana building. Bar food, drinks, a bit kitsch \u2014 a fun rainy-evening pivot if museums are closed." },
 ];
@@ -164,7 +170,7 @@ export const limburgRentals: Rental[] = [
 ];
 
 export const amsterdamRentals: Rental[] = [
-  { name: "Eric V\u00f6kel IJ River Suite", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "75m\u00b2 designer apartment near Centraal Station. 2 double + 1 twin bedroom, 2 bathrooms, IJ River views. Sofa bed for 2 extra. Weekly housekeeping included." },
+  { name: "Frederik Hendrikbuurt townhouse", url: "https://www.airbnb.com/rooms/42446371?check_in=2026-06-26&check_out=2026-06-30&search_mode=regular_search&source_impression_id=p3_1776093355_P3mgkNO6lOP-mq0l&previous_page_section_name=1000&federated_search_id=342d50d9-d96c-4e44-a20b-064605fd1478", desc: "Upper floor of a 19th-century brick townhouse in the Frederik Hendrikbuurt \u2014 a quiet residential pocket just west of the Jordaan, a few blocks south of Westerpark, and a 10-minute walk to Foodhallen. Tall windows over the treetops, herringbone floors, open living/dining for the whole crew. Trams on Marnixstraat into Centraal in ~15 min; canal belt and Anne Frank House walkable." },
 ];
 
 export const amsterdamAlternates: Rental[] = [
@@ -174,7 +180,7 @@ export const amsterdamAlternates: Rental[] = [
 ];
 
 export const nextSteps: NextStep[] = [
-  { number: 1, title: "Book airfare", desc: "" },
-  { number: 2, title: "Book the Burdinne house", desc: "" },
-  { number: 3, title: "Reserve the rental car", desc: "" },
+  { number: 1, title: "Book airfare", desc: "", done: true },
+  { number: 2, title: "Book the Burdinne house", desc: "", done: true },
+  { number: 3, title: "Reserve the rental car", desc: "", done: true },
 ];

@@ -4,9 +4,11 @@ import { Menu, X } from 'lucide-react'
 const links = [
   { label: 'Overview', href: '#overview' },
   { label: 'Route', href: '#route' },
+  { label: 'Reservations', href: '#reservations' },
   { label: 'Burdinne', href: '#limburg' },
   { label: 'Amsterdam', href: '#amsterdam' },
   { label: 'Rentals', href: '#rentals' },
+  { label: 'Places', href: '#places' },
   { label: 'Next steps', href: '#next-steps' },
 ]
 

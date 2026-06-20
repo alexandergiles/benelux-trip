@@ -1,6 +1,8 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import RouteMap from './components/RouteMap'
+import Reservations from './components/Reservations'
+import SavedPlaces from './components/SavedPlaces'
 import DayOptions from './components/DayOptions'
 import LimburgMap from './components/LimburgMap'
 import AmsterdamMap from './components/AmsterdamMap'
@@ -21,6 +23,7 @@ function App() {
       <Nav />
       <Hero />
       <RouteMap />
+      <Reservations />
       <Rentals
         id="rentals-flanders"
         heading="Burdinne: June 22–26"
@@ -47,8 +50,11 @@ function App() {
         id="rentals-amsterdam"
         heading="Amsterdam: June 26–30"
         rentals={amsterdamRentals}
-        photo="photos/rental-amsterdam.avif"
-        photoAlt="Eric Vökel IJ River Suite — Amsterdam"
+        photo={["photos/rental-amsterdam-exterior.jpg", "photos/rental-amsterdam-interior.jpg"]}
+        photoAlt={[
+          "19th-century brick townhouse facade with white trim and balcony — Frederik Hendrikbuurt, Amsterdam",
+          "Bright open living/dining room with herringbone floors, Chesterfield sofa, and tall windows onto trees",
+        ]}
         tint="coral-tint"
         accent="coral"
         label="The apartment"
@@ -67,6 +73,7 @@ function App() {
       >
         <AmsterdamMap />
       </DayOptions>
+      <SavedPlaces />
       <NextSteps steps={nextSteps} />
     </div>
   )

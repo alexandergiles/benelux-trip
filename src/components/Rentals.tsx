@@ -7,8 +7,8 @@ interface Props {
   id?: string
   heading: string
   rentals: Rental[]
-  photo: string
-  photoAlt: string
+  photo: string | string[]
+  photoAlt: string | string[]
   tint: 'limburg-tint' | 'coral-tint'
   accent: 'limburg' | 'coral'
   label: string
@@ -51,13 +51,23 @@ const accentStyles: Record<string, string> = {
 
 export default function Rentals({ id, heading, rentals, photo, photoAlt, tint, accent, label, alternates, alternatesLabel }: Props) {
   const ref = useFadeIn()
+  const photos = Array.isArray(photo) ? photo : [photo]
+  const alts = Array.isArray(photoAlt) ? photoAlt : [photoAlt]
 
   return (
     <section id={id} ref={ref} className="section-fade max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <h2 className="font-heading text-3xl text-ink mb-8">{heading}</h2>
 
       <div className={`${tintStyles[tint]} rounded-lg overflow-hidden border border-sand max-w-2xl`}>
-        <img src={base + photo} alt={photoAlt} className="w-full h-auto" loading="lazy" />
+        {photos.length > 1 ? (
+          <div className="grid grid-cols-2 gap-1">
+            {photos.map((src, i) => (
+              <img key={src} src={base + src} alt={alts[i] ?? alts[0]} className="w-full h-64 object-cover" loading="lazy" />
+            ))}
+          </div>
+        ) : (
+          <img src={base + photos[0]} alt={alts[0]} className="w-full h-auto" loading="lazy" />
+        )}
         <div className="p-6">
           <h3 className={`font-heading text-xl ${accentStyles[accent]} mb-4`}>{label}</h3>
           <RentalList rentals={rentals} />

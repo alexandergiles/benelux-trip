@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Never commit plaintext tickets — they must be encrypted (.enc) before shipping
+public/tickets/*.pdf

@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react'
+import { ChevronDown, ChevronUp, ExternalLink, Lock, Ticket } from 'lucide-react'
 import type { ActivityOption } from '../data/trip'
 import { base } from '../data/base'
+import { openTicket } from '../lib/tickets'
 
 interface Props {
   option: ActivityOption
@@ -68,6 +69,28 @@ export default function OptionCard({ option, accentColor, tintColor }: Props) {
         </h3>
         <p className="text-sm text-muted italic mb-2">{option.tag}</p>
         <p className="text-sm text-ink leading-relaxed">{option.body}</p>
+
+        {option.tickets && option.tickets.length > 0 && (
+          <div className="mt-3">
+            <div className="flex items-center gap-1.5 text-xs text-muted mb-1.5">
+              <Lock size={11} />
+              <span>Password-protected</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {option.tickets.map((t) => (
+                <button
+                  key={t.url}
+                  type="button"
+                  onClick={() => openTicket(t.url)}
+                  className={`inline-flex items-center gap-1.5 text-sm font-medium px-2.5 py-1 rounded border ${borderStyles[accentColor]} ${textStyles[accentColor]} bg-white hover:bg-sand/40 cursor-pointer`}
+                >
+                  <Ticket size={14} />
+                  {t.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {option.expandable && option.details && (
           <>
